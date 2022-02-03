@@ -1,5 +1,7 @@
 # Street Traffic Monitor #
 
+Dockerized version
+
 A python and OpenCV application to track vehicle speeds using a Raspberry Pi and PiCamera.
 The application is currently configured to observe vehicles traveling horizontally across the camera's view (from the side of the road). A photo of each passing vehicle is saved with the date, time and speed.
 
