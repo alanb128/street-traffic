@@ -13,3 +13,5 @@ WORKDIR /usr/src/app
 COPY . .
 
 CMD [ "sleep", "infinity" ]
+# To run on startup, change to:
+# CMD [ "python3", "main.py" ]
