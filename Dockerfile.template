@@ -1,0 +1,15 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-python:3-buster-build
+
+RUN apt-get update && apt-get upgrade -y
+
+RUN apt-get install -y ffmpeg libsm6 libxext6
+
+RUN pip3 install imutils numpy opencv-contrib-python
+
+RUN mkdir log && touch /log/debug.log
+ 
+WORKDIR /usr/src/app
+
+COPY . .
+
+CMD [ "sleep", "infinity" ]
